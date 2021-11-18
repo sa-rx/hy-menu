@@ -47,9 +47,14 @@ class OfferController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'title'=>'required',
+        ]);
+
+
         $offer = new Offer();
         $offer->create($request->all());
-        return redirect()->to('offers');
+        return redirect()->to('offers')->with('message','تمت اضافة البيانات بنجاح');
     }
 
     /**
@@ -84,8 +89,11 @@ class OfferController extends Controller
      */
     public function update(Request $request, Offer $offer)
     {
+        $request->validate([
+            'title'=>'required',
+        ]);
         $offer -> update($request->all());
-        return redirect()->to('offers');
+        return redirect()->to('offers')->with('message','تم تعديل البيانات بنجاح'); 
     }
 
     /**
@@ -97,7 +105,7 @@ class OfferController extends Controller
     public function destroy(Offer $offer)
     {
           $offer->delete();
-          return redirect()->to('offers');
+          return redirect()->to('offers')->with('message','تم الحذف  بنجاح');
 
     }
 }

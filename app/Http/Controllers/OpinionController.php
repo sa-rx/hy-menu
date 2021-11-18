@@ -44,9 +44,14 @@ class OpinionController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'name'=>'required',
+            'content'=>'required'
+        ]);
+
         $opinion = new Opinion();
         $opinion->create($request->all());
-        return  redirect()->to('opinions');
+        return  redirect()->to('opinions')->with('message','تم ارسال الرساله بنجاح');
 
     }
 
@@ -93,6 +98,6 @@ class OpinionController extends Controller
     public function destroy(Opinion $opinion)
     {
         $opinion->delete();
-        return  redirect()->to('opinions');
+        return  redirect()->to('opinions')->with('message','تم الحذف  بنجاح');
     }
 }

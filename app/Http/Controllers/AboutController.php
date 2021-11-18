@@ -44,6 +44,18 @@ class AboutController extends Controller
      */
     public function store(Request $request)
     {
+        
+      $request->validate([
+        'number'=>'required',
+        'snap'=>'required',
+        'inst'=>'required',
+        'location'=>'required',
+        'title'=>'required',
+        'worktime'=>'required',
+        'address'=>'required'
+        ]);
+
+
         $about = new About();
         $about->create($request->all());
         return  redirect()->to('abouts');   
@@ -82,8 +94,20 @@ class AboutController extends Controller
      */
     public function update(Request $request, About $about)
     {
+        
+      $request->validate([
+        'number'=>'required',
+        'snap'=>'required',
+        'inst'=>'required',
+        'location'=>'required',
+        'title'=>'required',
+        'worktime'=>'required',
+        'address'=>'required'
+        ]);
+
+        
         $about->update($request->all());
-        return  redirect()->to('abouts');   
+        return  redirect()->to('abouts')->with('message','تم تعديل البيانات بنجاح');   
     }
 
     /**

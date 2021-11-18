@@ -105,7 +105,7 @@
 
 
                             <div class="form-group">
-                                <button class="btn btn-success">تعديل</button>
+                                <button class="btn btn-outline-primary">   <i class="fas fa-pen-square"></i> تعديل</button>
                             </div>
                             </div>
                         </form>

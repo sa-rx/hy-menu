@@ -19,7 +19,7 @@
                             </div>
                             <br>
                             <div class="form-group">
-                                <button class="btn btn-success">اضافة</button>
+                                <button class="btn btn-success"> <i class="fas fa-plus-square">اضافة</button>
                             </div>
 
                         </form>

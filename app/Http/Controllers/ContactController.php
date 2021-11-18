@@ -39,7 +39,6 @@ class ContactController extends Controller
     {
         $about = About::find(1);
         return view('contact.create',compact('about'));
-
     }
 
     /**
@@ -50,9 +49,16 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'name'=>'required',
+            'content'=>'required'
+        ]);
+
+
+
         $contact = new Contact();
         $contact->create($request->all());
-        return redirect()->to('/');
+        return redirect()->to('/')->with('message','تم ارسال الرساله بنجاح');
 
 
     }
@@ -100,6 +106,6 @@ class ContactController extends Controller
     public function destroy(Contact $contact)
     {
         $contact->delete();
-        return  redirect()->to('contacts');
+        return  redirect()->to('contacts')->with('message','تم الحذف  بنجاح');
     }
 }

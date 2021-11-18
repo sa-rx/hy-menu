@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 
 class CategoryController extends Controller
 {
-
+    
 
 
     function __construct()
@@ -51,9 +51,13 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'title'=>'required'
+            ]);
+
         $category = new Category ();
         $category->create($request->all());
-        return  redirect()->to('categories');
+        return  redirect()->to('categories')->with('message','تمت اضافة البيانات بنجاح');
     }
 
     /**
@@ -91,10 +95,12 @@ class CategoryController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-        
+        $request->validate([
+        'title'=>'required'
+        ]);
     
-            $category->update($request->all());
-            return redirect()->to('categories');
+      $category->update($request->all());
+      return redirect()->to('categories')->with('message','تم تعديل البيانات بنجاح');
     }
 
     /**
@@ -106,6 +112,6 @@ class CategoryController extends Controller
     public function destroy(Category $category)
     {
         $category->delete();
-        return  redirect()->to('categories');
+        return  redirect()->to('categories')->with('message','تم حذف الفئه بنجاح');
     }
 }

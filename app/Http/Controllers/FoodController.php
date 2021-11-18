@@ -40,7 +40,11 @@ class FoodController extends Controller
     
     public function store(Request $request)
     {
-        
+        $request->validate([
+
+            'name'=>'required',
+            'price'=>'required'  
+        ]);
        
         $food = new Food(request()->all());
         $food->user_id = Auth::id();
@@ -48,7 +52,7 @@ class FoodController extends Controller
         $category = Category::find($request->get('category_id'));
         $category->foods()->save($food);
 
-        return  redirect()->to('foods');
+        return  redirect()->to('foods')->with('message','تمت اضافة البيانات بنجاح');
 
     }
 
@@ -69,19 +73,23 @@ class FoodController extends Controller
   
     public function update(Request $request, Food $food)
     {   
+        $request->validate([
 
+            'name'=>'required',
+            'price'=>'required'  
+        ]);
         
         $food->update($request->all());
       //  dd($food);
         $category = Category::find($request->get('category_id'));
         $category->foods()->save($food);
-        return  redirect()->to('foods');
+        return  redirect()->to('foods')->with('message','تم تعديل البيانات بنجاح'); 
     }
 
     
     public function destroy(Food $food)
     {
         $food->delete();
-        return  redirect()->to('foods');
+        return  redirect()->to('foods')->with('message','تم الحذف  بنجاح');
     }
 }
