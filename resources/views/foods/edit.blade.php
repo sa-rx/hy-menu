@@ -35,17 +35,17 @@
 
                                     <div class="form-group col-md-6">
                                         <label for="price-lg">السعر وسط</label>
-                                        <input type="text" name="price-lg" class="form-control"  @isset($food) value="{{$food->price-lg}}" @endisset>
+                                        <input type="text" name="price-lg" class="form-control"  @isset($food) value="{{$food->price_lg}}" @endisset>
                                     </div>
 
                                     <div class="form-group col-md-6">
                                         <label for="price-xl">السعر كبير</label>
-                                        <input type="text" name="price-xl" class="form-control"  @isset($food) value="{{$food->price-xl}}" @endisset>
+                                        <input type="text" name="price-xl" class="form-control"  @isset($food) value="{{$food->price_xl}}" @endisset>
                                     </div>
 
                                     <div class="form-group col-md-6">
                                         <label for="price-xxl">السعر براد</label>
-                                        <input type="text" name="price-xxl" class="form-control"  @isset($food) value="{{$food->price-xxl}}" @endisset>
+                                        <input type="text" name="price-xxl" class="form-control"  @isset($food) value="{{$food->price_xxl}}" @endisset>
                                     </div>
 
                             <div class="form-group col-md-6">

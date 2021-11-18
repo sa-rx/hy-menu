@@ -32,17 +32,17 @@
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <label for="price-lg">السعر وسط</label>
+                                        <label for="price_lg">السعر وسط</label>
                                         <input type="text" name="price-lg" class="form-control">
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <label for="price-xl">السعر كبير</label>
+                                        <label for="price_xl">السعر كبير</label>
                                         <input type="text" name="price-xl" class="form-control">
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <label for="price-xxl">السعر براد</label>
+                                        <label for="price_xxl">السعر براد</label>
                                         <input type="text" name="price-xxl" class="form-control">
                                     </div>
 
