@@ -17,7 +17,8 @@
                             <div class="cta-inner bg-faded text-center rounded">
                                 <h2 class="section-heading mb-2">
                                     <span class="section-heading-lower">{{$offer->title}}</span>
-                                    <span class="section-heading-upper">{{$offer->content}}</span>
+                                    <br>
+                                    <h6 class="section-heading-upper">{!! nl2br($offer->content)!!}</h6>
                                 </h2>
                                 <p class="mb-0">{{$offer->price}}
                             </div>
@@ -54,7 +55,9 @@
                             <tr>
                                 <th scope="col">   الاسم</th>
                                 <th scope="col">السعر</th>
-                                <th scope="col">السعرات الحراريه</th>
+                                
+
+                                <th scope="col">السعرات </th>
                             </tr>
                         </thead>
 
@@ -69,10 +72,15 @@
                                     <th scope="row">  {{$food->name}}</th>
 
                                     @if(isset($food->offer_price))
-                                    <td> {{$food->price}} {{$food->offer_price}} </td>
+                                    <td><s class="text-danger">{{$food->price}}</s> <b class="text-dark"></b>{{$food->offer_price}}</td>
+                                    
+                                    
+                                         
                                     @else
                                     <td>{{$food->price}}</td>
-                                    @endif   
+                                    @endif
+                                    
+   
                                     <td>  {{$food->calories}}</td>
                                 </tr>
 

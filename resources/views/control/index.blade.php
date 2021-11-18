@@ -16,31 +16,31 @@
 
                                 <div class="col-md-3">
                                     <a href="{{route('food.index')}}" >
-                                        <h1  class="text-center  text-secondary"><button  style=" color: #4d2b1b;  border-color: #4d2b1b; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-phone-square fa-2x"></i> </button>  </h1>
+                                        <h1  class="text-center  text-secondary"><button  style=" color: #4d2b1b;  border-color: #4d2b1b; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-coffee fa-2x"></i> </button>  </h1>
                                     </a>
 
                                     <div id="demo" >
-                                        <p class="text-center" >food </p>
+                                        <p class="text-center" >الاصناف </p>
                                     </div>
                                 </div>
 
                                 <div class="col-md-3">
                                     <a href="{{route('categories.index')}}" >
-                                        <h1  class="text-center  text-secondary"><button  style=" color: #4d2b1b;  border-color: #4d2b1b; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-phone-square fa-2x"></i> </button>  </h1>
+                                        <h1  class="text-center  text-secondary"><button  style=" color: #4d2b1b;  border-color: #4d2b1b; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-tablets fa-2x"></i> </button>  </h1>
                                     </a>
 
                                     <div id="demo" >
-                                        <p class="text-center" >categories </p>
+                                        <p class="text-center" >الفئات </p>
                                     </div>
                                 </div>
 
                                 <div class="col-md-3">
                                     <a href="{{route('abouts.index')}}" >
-                                        <h1  class="text-center  text-secondary"><button  style=" color: #4d2b1b;  border-color: #4d2b1b; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-phone-square fa-2x"></i> </button>  </h1>
+                                        <h1  class="text-center  text-secondary"><button  style=" color: #4d2b1b;  border-color: #4d2b1b; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-address-card fa-2x"></i> </button>  </h1>
                                     </a>
 
                                     <div id="demo" >
-                                        <p class="text-center" >abouts </p>
+                                        <p class="text-center" >بيانات من نحن </p>
                                     </div>
                                 </div>
 
@@ -50,43 +50,43 @@
                                     </a>
 
                                     <div id="demo" >
-                                        <p class="text-center" >contacts </p>
+                                        <p class="text-center" >تواصل معنا </p>
                                     </div>
                                 </div>
 
                                 <div class="col-md-3">
                                     <a href="{{route('opinions.index')}}" >
-                                        <h1  class="text-center  text-secondary"><button  style=" color: #4d2b1b;  border-color: #4d2b1b; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-phone-square fa-2x"></i> </button>  </h1>
+                                        <h1  class="text-center  text-secondary"><button  style=" color: #4d2b1b;  border-color: #4d2b1b; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-lightbulb fa-2x"></i> </button>  </h1>
                                     </a>
 
                                     <div id="demo" >
-                                        <p class="text-center" >opinions </p>
+                                        <p class="text-center" >الاراء </p>
                                     </div>
                                 </div>
 
                                 <div class="col-md-3">
                                     <a href="{{route('users.index')}}" >
-                                        <h1  class="text-center  text-secondary"><button  style=" color: #4d2b1b;  border-color: #4d2b1b; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-phone-square fa-2x"></i> </button>  </h1>
+                                        <h1  class="text-center  text-secondary"><button  style=" color: #4d2b1b;  border-color: #4d2b1b; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-users  fa-2x"></i> </button>  </h1>
                                     </a>
 
                                     <div id="demo" >
-                                        <p class="text-center" >Manage Users </p>
+                                        <p class="text-center" > ادارة المستخدمين </p>
                                     </div>
                                 </div>
 
                                 <div class="col-md-3">
                                     <a href="{{route('roles.index')}}" >
-                                        <h1  class="text-center  text-secondary"><button  style=" color: #4d2b1b;  border-color: #4d2b1b; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-phone-square fa-2x"></i> </button>  </h1>
+                                        <h1  class="text-center  text-secondary"><button  style=" color: #4d2b1b;  border-color: #4d2b1b; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-atom fa-2x"></i> </button>  </h1>
                                     </a>
 
                                     <div id="demo" >
-                                        <p class="text-center" >Manage Role </p>
+                                        <p class="text-center" > ادارة ادوار المستخدمين </p>
                                     </div>
                                 </div>
 
                                 <div class="col-md-3">
                                     <a href="{{route('offers.index')}}" >
-                                        <h1  class="text-center  text-secondary"><button  style=" color: #4d2b1b;  border-color: #4d2b1b; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-phone-square fa-2x"></i> </button>  </h1>
+                                        <h1  class="text-center  text-secondary"><button  style=" color: #4d2b1b;  border-color: #4d2b1b; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-tags fa-2x"></i> </button>  </h1>
                                     </a>
 
                                     <div id="demo" >
