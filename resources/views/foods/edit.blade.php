@@ -11,7 +11,7 @@
             <div class="">
                 <div class="">
                             <h5 class="section-heading mb-3">
-                                <span class="section-heading-lower">تعديل صنف</span>
+                                تعديل صنف
                             </h5>
                     <div class="">
                         <form class="cta-inner bg-faded" action="{{route('food.update', $food)}}" method="post">

@@ -1,17 +1,23 @@
 @extends('layouts.app')
+@section('title', 'تعديل عرض ')
 
 @section('content')
 
 <h2></h2>
 
 
-<div class="container">
+<div class="container page-section cta ">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">تعديل صنف</div>
-                    <div class="card-body">
-                        <form action="{{route('offers.update', $offer)}}" method="post">
+            <div class="">
+                <div class="">
+                            <h5 class="section-heading mb-3">
+                                اضافة عرض
+                            </h5>
+                    <div class="">
+
+
+                        <form class="cta-inner bg-faded" action="{{route('offers.update', $offer)}}" method="post">
                             <div class="row">
                             @csrf
                             @method('PATCH')
@@ -38,11 +44,11 @@
 
                             <div class="form-group col-md-12">
                                 <label for="content">المحتويات</label>
-                                <textarea name="content" class="form-control"  @isset($offer) value="{{$offer->content}}" @endisset></textarea>
+                                <textarea name="content" class="form-control"  >@isset($offer) {{$offer->content}} @endisset</textarea>
                             </div>
                             <br>
                             <div class="form-group">
-                                <button class="btn btn-success">اضافة</button>
+                                <button class="btn btn-success"> <i class="fas fa-pen-square"></i> تعديل</button>
                             </div>
                         </div>
                         </form>

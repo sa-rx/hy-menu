@@ -21,7 +21,7 @@
 
                         <div class="col-md-3">
                         <a href="#demo" data-toggle="collapse">
-                            <h1  class="text-center  text-secondary"><button  style=" color: #4d2b1b;  border-color: #4d2b1b" class="btn  btn-outline-secondary btn-lg">   <i class="fas fa-phone-square fa-2x"></i> </button>  </h1>
+                            <h1  class="text-center  text-secondary"><button  style=" color: #4d2b1b;  border-color: #4d2b1b; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-phone-square fa-2x"></i> </button>  </h1>
                         </a>
 
                         <div id="demo" class="collapse">
@@ -34,7 +34,7 @@
 
                         <div class="col-md-3">
                         <a href="#demo" data-toggle="collapse">
-                            <h1 class="text-center  text-secondary">  <button style=" color: #4d2b1b;  border-color: #4d2b1b" class="btn  btn-outline-secondary btn-lg">  <i class="fab fa-instagram fa-2x"></i>   </button> </h1>
+                            <h1 class="text-center  text-secondary">  <button style=" color: #4d2b1b;  border-color: #4d2b1b" class="btn  btn-outline-light btn-lg">  <i class="fab fa-instagram fa-2x"></i>   </button> </h1>
                         </a>
 
                         <div id="demo" class="collapse">
@@ -45,7 +45,7 @@
 
                         <div class="col-md-3">
                         <a href="#demo" data-toggle="collapse">
-                        <h1 class="text-center  text-secondary">  <button style=" color: #4d2b1b;  border-color: #4d2b1b" class="btn  btn-outline-secondary btn-lg">  <i class="fab fa-snapchat fa-2x"></i>  </button>   </h1>
+                        <h1 class="text-center  text-secondary">  <button style=" color: #4d2b1b;  border-color: #4d2b1b" class="btn  btn-outline-light btn-lg">  <i class="fab fa-snapchat fa-2x"></i>  </button>   </h1>
                         </a>
 
                         <div id="demo" class="collapse">
@@ -56,7 +56,7 @@
 
                         <div class="col-sm-3">
                             <a href="#demo" data-toggle="collapse">
-                            <h1 class="text-center  text-secondary">  <button style=" color: #4d2b1b;  border-color: #4d2b1b" class="btn  btn-outline-secondary btn-lg">   <i class="fas fa-map-marker-alt fa-2x"></i>   </button>   </h1>
+                            <h1 class="text-center  text-secondary">  <button style=" color: #4d2b1b;  border-color: #4d2b1b" class="btn  btn-outline-light btn-lg">   <i class="fas fa-map-marker-alt fa-2x"></i>   </button>   </h1>
                             </a>
 
                             <div id="demo" class="collapse">

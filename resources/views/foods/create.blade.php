@@ -9,7 +9,7 @@
             <div class="">
                 <div class="">
                             <h5 class="section-heading mb-3">
-                                <span class="section-heading-lower">اضافة صنف</span>
+                                اضافة صنف
                             </h5>
                     <div class="">
 

@@ -1,17 +1,20 @@
 @extends('layouts.app')
+@section('title', 'تعديل فئه ')
 
 @section('content')
 
 <h2></h2>
 
 
-<div class="container">
+<div class="container page-section cta ">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">تعديل صنف</div>
-                    <div class="card-body">
-                        <form action="{{route('categories.update', $category)}}" method="post">
+            <div class="">
+            <h5 class="section-heading mb-3">
+                                تعديل فئه
+                            </h5>
+                    <div class="">
+                        <form class="cta-inner bg-faded" action="{{route('categories.update', $category)}}" method="post">
                             @csrf
                             @method('PATCH')
                             <div class="form-group">
@@ -20,7 +23,7 @@
                             </div>
                             <br>
                             <div class="form-group">
-                                <button class="btn btn-success">اضافة</button>
+                                <button class="btn btn-success">تعديل <i class="fas fa-pen-square"></i> </button>
                             </div>
 
                         </form>

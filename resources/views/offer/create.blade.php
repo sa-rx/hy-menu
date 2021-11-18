@@ -1,21 +1,27 @@
 @extends('layouts.app')
+@section('title', 'اضافة عرض ')
 
 @section('content')
 
 <h2></h2>
 
 
-<div class="container">
+<div class="container page-section cta ">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">اضافة تصنيف</div>
-                    <div class="card-body row">
-                        <form action="{{route('offers.store')}}" method="post">
+            <div class="">
+                <div class="">
+                            <h5 class="section-heading mb-3">
+                                اضافة عرض
+                            </h5>
+                    <div class="">
+
+
+                        <form class="cta-inner bg-faded" action="{{route('offers.store')}}" method="post">
                             <div class="row">
                             @csrf
                             <div class="form-group col-md-12">
-                                <label for="title">اسم الصنف</label>
+                                <label for="title">اسم عرض</label>
                                 <input type="text" name="title" class="form-control">
                             </div>
 
@@ -42,7 +48,7 @@
 
                             <br>
                             <div class="form-group">
-                                <button class="btn btn-success">اضافة</button>
+                            <button class="btn btn-outline-dark">  <i class="fas fa-plus-square"></i> اضافة</button>
                             </div>
                         </div>
                         </form>

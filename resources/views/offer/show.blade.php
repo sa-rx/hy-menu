@@ -23,7 +23,8 @@
                                                        
                                                     </li>
                                                     <li class="list-unstyled-item list-hours-item d-flex">
-                                                    {{$offer->content}}
+                                                  
+                                                    {!! nl2br( $offer->content )!!}
                                                        
                                                     </li>
 

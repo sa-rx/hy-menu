@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', ' العروض ')
 
 @section('content')
 
@@ -6,19 +7,15 @@
 <section class="page-section cta">
             <div class="container">
                 <div class="row">
+                <a  class="btn btn-outline-dark col-xl-4 mx-auto mb-2" href="{{route('offers.create')}}"> <i class="fas fa-plus-square"></i>  اضافة عرض</a>
                     <div class="col-xl-9 mx-auto">
                         <div class="cta-inner bg-faded text-center rounded">
-                            <h2 class="section-heading mb-5">
-                            <span class="section-heading-upper"><a href="{{route('offers.create')}}"> اضافة اكل</a></span>
-
-                                <span class="section-heading-upper">Come On In</span>
-                                <span class="section-heading-lower">We're Open</span>
-                            </h2>
+                            
 
 
 
-                            <table class="table table-striped table-hover table-dark ">
-                                    <thead  class="table-dark">
+                            <table class="table table-striped table-hover  ">
+                                    <thead  class="">
                                         <tr>
                                         
                                         <th scope="col">الاسم</th>
@@ -50,13 +47,13 @@
                                                
 
 
-                                                <td> <a class="btn btn-primary" href="{{route('offers.edit',$offer)}}">تعديل  </a> </td>
+                                                <td> <a class="btn btn-primary" href="{{route('offers.edit',$offer)}}"><i class="fas fa-pen-square"></i>  </a> </td>
                                                 <td>
                                                 
                                                 <form method="post" action="{{route('offers.destroy',$offer)}}"href="">
                                                 @method('delete')
                                                 @csrf
-                                                <button onclick="return confirm('هل انت متأكد؟')" class="btn btn-danger" >حذف <i class="fas fa-trash-alt"></i></button>
+                                                <button onclick="return confirm('هل انت متأكد؟')" class="btn btn-danger" > <i class="fas fa-trash-alt"></i></button>
                                                 </form>
 
                                             </td>
