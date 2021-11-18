@@ -1,17 +1,20 @@
 @extends('layouts.app')
+@section('title', 'تعديل صنف ')
 
 @section('content')
 
 <h2></h2>
 
-
-<div class="container">
+<div class="container page-section cta ">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">تعديل صنف</div>
-                    <div class="card-body">
-                        <form action="{{route('food.update', $food)}}" method="post">
+            <div class="">
+                <div class="">
+                            <h5 class="section-heading mb-3">
+                                <span class="section-heading-lower">تعديل صنف</span>
+                            </h5>
+                    <div class="">
+                        <form class="cta-inner bg-faded" action="{{route('food.update', $food)}}" method="post">
                             @csrf
                             @method('PATCH')
 
@@ -27,6 +30,23 @@
                                 <label for="price">السعر</label>
                                 <input type="text" name="price" class="form-control"  @isset($food) value="{{$food->price}}" @endisset>
                             </div>
+
+                            
+
+                                    <div class="form-group col-md-6">
+                                        <label for="price-lg">السعر وسط</label>
+                                        <input type="text" name="price-lg" class="form-control"  @isset($food) value="{{$food->price-lg}}" @endisset>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="price-xl">السعر كبير</label>
+                                        <input type="text" name="price-xl" class="form-control"  @isset($food) value="{{$food->price-xl}}" @endisset>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="price-xxl">السعر براد</label>
+                                        <input type="text" name="price-xxl" class="form-control"  @isset($food) value="{{$food->price-xxl}}" @endisset>
+                                    </div>
 
                             <div class="form-group col-md-6">
                                 <label for="offer_price">العرض</label>
@@ -78,18 +98,18 @@
 
                             <div class="form-group ">
                             <label for="content">المحتويات</label>
-                            <textarea name="content" class="form-control"  @isset($food) value="{{$food->content}}" @endisset></textarea>
+                            <textarea name="content" class="form-control"  >@isset($food) {{$food->content}} @endisset</textarea>
                             </div>
 
 
 
 
                             <div class="form-group">
-                                <button class="btn btn-success">اضافة</button>
+                                <button class="btn btn-success">تعديل</button>
                             </div>
                             </div>
                         </form>
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>

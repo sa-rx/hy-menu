@@ -1,7 +1,7 @@
 @extends('layouts.app')
+@section('title', ' اراء العملاء ')
 
 @section('content')
-
 
 
 <section class="page-section cta">

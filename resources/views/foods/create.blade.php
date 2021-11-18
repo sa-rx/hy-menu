@@ -1,16 +1,20 @@
 @extends('layouts.app')
+@section('title', 'اضافة صنف ')
 
 @section('content')
 
-<div class="container">
+<div class="container page-section cta ">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">اضافة صنف</div>
-                    <div class="card-body">
+            <div class="">
+                <div class="">
+                            <h5 class="section-heading mb-3">
+                                <span class="section-heading-lower">اضافة صنف</span>
+                            </h5>
+                    <div class="">
 
 
-                        <form  action="{{route('food.store')}}" method="post">
+                        <form class="cta-inner bg-faded" action="{{route('food.store')}}" method="post">
                                 <div class="row">
 
                                     @csrf
@@ -23,8 +27,23 @@
                                 
 
                                     <div class="form-group col-md-6">
-                                        <label for="price">السعر</label>
+                                        <label for="price"> السعر صغير</label>
                                         <input type="text" name="price" class="form-control">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="price-lg">السعر وسط</label>
+                                        <input type="text" name="price-lg" class="form-control">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="price-xl">السعر كبير</label>
+                                        <input type="text" name="price-xl" class="form-control">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="price-xxl">السعر براد</label>
+                                        <input type="text" name="price-xxl" class="form-control">
                                     </div>
 
                                     <div class="form-group col-md-6">
@@ -78,7 +97,7 @@
 
 
                                     <div class="form-group">
-                                    <button class="btn btn-primary">حجز</button>
+                                    <button class="btn btn-outline-dark">  <i class="fas fa-plus-square"></i> اضافة</button>
                             </div>
                         </form>
                         </div>
