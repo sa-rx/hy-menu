@@ -2,6 +2,11 @@
 @section('title', ' الرئيسيه ')
 
 @section('content')
+
+
+
+
+
 <section class="page-section cta">
             <div class="container">
                 <div class="row">
@@ -25,18 +30,27 @@
             </div>
         </section>       
 
+
+
+
+
+
+
+
+
         <section class="page-section cta">
-            <div class="container">
+            <div class="container ">
 
 
                 
 
                     @forelse($categories as $category)
-                    <span class="section-heading-lower">{{$category->title}}</span>
+                    <div class="cta-inner mb-5 ">
+                    <table class="table table-hover  text-center  mb-5">
+                    <h3 class="section-heading-lower">{{$category->title}}</h3>
+                    <br>
 
-                    <table class="table table-hover table-striped cta-inner   mb-5">
-                
-                        <thead>
+                        <thead class=" bg-faded ">
                             <tr>
                                 <th scope="col">   الاسم</th>
                                 <th scope="col">السعر</th>
@@ -45,7 +59,7 @@
                         </thead>
 
 
-                        <tbody class="cta">
+                        <tbody class="  bg-faded">
                         @forelse($category->foods as $food)
                             @if($food->available == 0)
                             
@@ -70,7 +84,7 @@
                         
                     
                     </table>
-
+                    </div>
                         @empty
                             {{__('no comments yet')}}
                         @endforelse
