@@ -21,9 +21,9 @@ class Food extends Model
         'available',
         'status',
         'user_id',
-        'price-lg',
-        'price-xl',
-        'price-xxl'
+        'price_lg',
+        'price_xl',
+        'price_xxl'
       ];
 
 
