@@ -6,19 +6,17 @@
 
 <section class="page-section cta">
             <div class="container">
+
+            
                 <div class="row">
+
                     <div class="col-xl-9 mx-auto">
                         <div class="cta-inner bg-faded text-center rounded">
-                            <h2 class="section-heading mb-5">
-
-                                <span class="section-heading-upper">Come On In</span>
-                                <span class="section-heading-lower">We're Open</span>
-                            </h2>
+                           
 
 
-
-                            <table class="table table-striped table-hover table-dark ">
-                                    <thead  class="table-dark">
+                            <table class="table table-striped table-hover ">
+                                    <thead  class="">
                                         <tr>
                                         
                                         <th scope="col">الاسم</th>
@@ -51,7 +49,7 @@
                                                 <form method="post" action="{{route('contacts.destroy',$contact)}}"href="">
                                                 @method('delete')
                                                 @csrf
-                                                <button onclick="return confirm('هل انت متأكد؟')" class="btn btn-danger" >حذف <i class="fas fa-trash-alt"></i></button>
+                                                <button onclick="return confirm('هل انت متأكد؟')" class="btn btn-outline-danger" > <i class="fas fa-trash-alt"></i></button>
                                                 </form>
 
                                             </td>

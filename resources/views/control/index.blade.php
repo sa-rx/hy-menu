@@ -90,7 +90,7 @@
                                     </a>
 
                                     <div id="demo" >
-                                        <p class="text-center" >offers </p>
+                                        <p class="text-center" >العروض </p>
                                     </div>
                                 </div>
 

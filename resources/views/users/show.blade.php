@@ -1,4 +1,6 @@
 @extends('layouts.app')
+@section('title', ' ادارة المستخدمين ')
+
 @section('content')
 
 <section class="page-section cta">
