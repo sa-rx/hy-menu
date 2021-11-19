@@ -11,13 +11,13 @@
                 <a  class="btn btn-outline-dark col-xl-4 mx-auto mb-2" href="{{route('food.create')}}"><i class="fas fa-plus-square"></i>  اضافة صنف </a>
 
                     <div class="col-xl-12 mx-auto">
-                        <div class="cta-inner bg-faded text-center rounded">
+                        <div class="container bg-faded text-center rounded">
                           
                            
 
 
 
-                            <table class="table table-striped table-hover  ">
+                            <table class="table table-responsive table-hover  ">
                                     <thead  class="">
                                         <tr>
                                         

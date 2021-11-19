@@ -40,14 +40,14 @@
 
 
         <section class="page-section cta">
-            <div class=" ">
+            <div class="container  bg-faded text-center rounded">
 
 
                 
-
+ 
                     @forelse($categories as $category)
-                    <div class=" container mb-5 ">
-                    <table class="table table-hover  text-center  mb-5">
+                    <div class=" ">
+                    <table class="table  table-hover table-borderless text-center  mb-5">
                     <h3 class="section-heading-lower">{{$category->title}}</h3>
                     <br>
 

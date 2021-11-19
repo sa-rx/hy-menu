@@ -25,6 +25,9 @@
                             
 
                                 
+                                    <hr>
+
+
 
                                     <div class="form-group col-md-6">
                                         <label for="price"> السعر صغير</label>
@@ -45,6 +48,9 @@
                                         <label for="price_xxl">السعر براد</label>
                                         <input type="text" name="price_xxl" class="form-control">
                                     </div>
+
+                                     <hr>
+
 
                                     <div class="form-group col-md-6">
                                         <label for="offer_price">العرض</label>
