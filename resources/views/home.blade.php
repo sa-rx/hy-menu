@@ -40,13 +40,13 @@
 
 
         <section class="page-section cta">
-            <div class="container ">
+            <div class=" ">
 
 
                 
 
                     @forelse($categories as $category)
-                    <div class="cta-inner mb-5 ">
+                    <div class=" container mb-5 ">
                     <table class="table table-hover  text-center  mb-5">
                     <h3 class="section-heading-lower">{{$category->title}}</h3>
                     <br>
