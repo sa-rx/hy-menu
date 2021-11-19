@@ -26,7 +26,7 @@
 <p>{{ $message }}</p>
 </div>
 @endif
-<table class="table table-bordered ">
+<table class="table table-bordered table-responsive-xl ">
 <tr>
 <th>No</th>
 <th>Name</th>
