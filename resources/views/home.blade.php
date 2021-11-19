@@ -54,7 +54,12 @@
                         <thead class=" bg-faded ">
                             <tr>
                                 <th scope="col">   الاسم</th>
-                                <th scope="col">السعر</th>
+
+                                <th scope="col">صغير </th>
+                                <th scope="col">وسط</th>
+                                <th scope="col">كبير</th>
+                                <th scope="col">براد</th>
+
                                 
 
                                 <th scope="col">السعرات </th>
@@ -73,12 +78,29 @@
 
                                     @if(isset($food->offer_price))
                                     <td><s class="text-danger">{{$food->price}}</s> <b class="text-dark"></b>{{$food->offer_price}}</td>
-                                    
-                                    
-                                         
                                     @else
                                     <td>{{$food->price}}</td>
                                     @endif
+
+                                               
+
+                                                @if(isset($food->price_lg))
+                                                <td >{{$food->price_lg}}</td>
+                                                @else
+                                                <td>-</td>
+                                                @endif
+                                                
+                                                @if(isset($food->price_xl))
+                                                <td >{{$food->price_xl}}</td>
+                                                @else
+                                                <td>-</td>
+                                                @endif
+                                                
+                                                @if(isset($food->price_xxl))
+                                                <td >{{$food->price_xxl}}</td>
+                                                @else
+                                                <td>-</td>
+                                                @endif
                                     
    
                                     <td>  {{$food->calories}}</td>

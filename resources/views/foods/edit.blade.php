@@ -34,18 +34,18 @@
                             
 
                                     <div class="form-group col-md-6">
-                                        <label for="price-lg">السعر وسط</label>
-                                        <input type="text" name="price-lg" class="form-control"  @isset($food) value="{{$food->price_lg}}" @endisset>
+                                        <label for="price_lg">السعر وسط</label>
+                                        <input type="text" name="price_lg" class="form-control"  @isset($food) value="{{$food->price_lg}}" @endisset>
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <label for="price-xl">السعر كبير</label>
-                                        <input type="text" name="price-xl" class="form-control"  @isset($food) value="{{$food->price_xl}}" @endisset>
+                                        <label for="price_xl">السعر كبير</label>
+                                        <input type="text" name="price_xl" class="form-control"  @isset($food) value="{{$food->price_xl}}" @endisset>
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <label for="price-xxl">السعر براد</label>
-                                        <input type="text" name="price-xxl" class="form-control"  @isset($food) value="{{$food->price_xxl}}" @endisset>
+                                        <label for="price_xxl">السعر براد</label>
+                                        <input type="text" name="price_xxl" class="form-control"  @isset($food) value="{{$food->price_xxl}}" @endisset>
                                     </div>
 
                             <div class="form-group col-md-6">
@@ -68,19 +68,7 @@
                                 </select>
                             </div>
 
-                            <div class="form-group col-md-6">
-
-                           
-
-
-                                <label for="status">عرض في الصفحه الرايسيه</label>
-                                <select class="form-control" name="status" id="1"   old( $food->status) >
-                                <option value="1" {{old('status',$food->status)=="1"? 'selected':''}}  value="$food->status">عرض</option>
-                                
-                                <option value="0" {{old('status',$food->status)=="0"? 'selected':''}}  value="$food->status">لا</option>
-
-                                </select>
-                            </div>
+                            
 
                             
                             <div class="form-group col-md-6">

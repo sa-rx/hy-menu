@@ -22,13 +22,12 @@
                                         <tr>
                                         
                                         <th scope="col">الاسم</th>
-                                        <th scope="col">السعر</th>
+                                        <th scope="col " colspan="4">السعر</th>
                                         <th scope="col">العرض</th>
                                         <th scope="col"> سعره حراريه</th>
                                         <th scope="col"> الصنف</th>
                                         <th scope="col"> بواسطه</th>
                                         <th scope="col"> متوفر</th>
-                                        <th scope="col"> عرض في المنيو</th>
                                         <th scope="col">عرض</th>
                                         <th scope="col">حذف</th>
                                         </tr>
@@ -40,8 +39,38 @@
                                             @forelse($foods as $food)
                                             <tr>
                                                 <td >{{$food->name}}</td>
-                                                <td>{{$food->price}} | {{$food->price_lg}} | {{$food->price_xl}} | {{$food->price_xxl}} | </td>
+
+                                                @if(isset($food->price))
+                                                <td>{{$food->price}}  </td>
+                                                @else
+                                                <td>-</td>
+                                                @endif
+
+                                                @if(isset($food->price_lg))
+                                                <td >{{$food->price_lg}}</td>
+                                                @else
+                                                <td>-</td>
+                                                @endif
+                                                
+                                                @if(isset($food->price_xl))
+                                                <td >{{$food->price_xl}}</td>
+                                                @else
+                                                <td>-</td>
+                                                @endif
+                                                
+                                                @if(isset($food->price_xxl))
+                                                <td >{{$food->price_xxl}}</td>
+                                                @else
+                                                <td>-</td>
+                                                @endif
+
+
+                                                @if(isset($food->offer_price))
                                                 <td>{{$food->offer_price}}</td>
+                                                @else
+                                                <td>-</td>
+                                                @endif
+
                                                 <td>{{$food->calories}}</td>
                                                 <td>{{$food->category->title}}</td>
                                                 <td>{{$food->user->name}}</td>
@@ -53,11 +82,7 @@
                                                     <td class="ms-auto">غير متوفر</td> 
                                                 @endif
 
-                                                @if($food->status == 1)
-                                                    <td class="ms-auto">اعرض</td> 
-                                                @else
-                                                    <td class="ms-auto">لا تعرض </td> 
-                                                @endif
+                                              
 
 
                                                 <td> <a class="btn btn-outline-primary" href="{{route('food.edit',$food)}}">  <i class="fas fa-pen-square"></i></a> </td>
