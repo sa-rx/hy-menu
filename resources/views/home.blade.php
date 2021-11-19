@@ -110,7 +110,7 @@
 
                             @endif
                         @empty
-                        {{__('no comments yet')}}
+                        {{__('لايوجد شيئ')}}
                         @endforelse
 
                       
@@ -120,7 +120,7 @@
                     </table>
                     </div>
                         @empty
-                            {{__('no comments yet')}}
+                        {{__('لايوجد شيئ')}}
                         @endforelse
 
 
