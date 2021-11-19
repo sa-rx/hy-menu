@@ -40,7 +40,7 @@
                                             @forelse($foods as $food)
                                             <tr>
                                                 <td >{{$food->name}}</td>
-                                                <td>{{$food->price}}</td>
+                                                <td>{{$food->price}} | {{$food->price_lg}} | {{$food->price_xl}} | {{$food->price_xxl}} | </td>
                                                 <td>{{$food->offer_price}}</td>
                                                 <td>{{$food->calories}}</td>
                                                 <td>{{$food->category->title}}</td>
