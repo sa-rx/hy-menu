@@ -48,6 +48,8 @@
                     @forelse($categories as $category)
                     <div class=" ">
                     <table class="table table-responsive-xl table-hover table-borderless text-center  mb-5">
+                  
+                    <br>
                     <h3 class="section-heading-lower">{{$category->title}}</h3>
                     <br>
 
@@ -110,6 +112,8 @@
                         @empty
                         {{__('no comments yet')}}
                         @endforelse
+
+                      
                         </tbody>
                         
                     
@@ -121,7 +125,8 @@
 
 
 
-
+                     
+                    <br>
             </div>
         </section>
 @endsection
