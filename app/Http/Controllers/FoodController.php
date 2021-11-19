@@ -73,14 +73,10 @@ class FoodController extends Controller
   
     public function update(Request $request, Food $food)
     {   
-        $request->validate([
-
-            'name'=>'required',
-            'price'=>'required'  
-        ]);
+        
         
         $food->update($request->all());
-      //  dd($food);
+       
         $category = Category::find($request->get('category_id'));
         $category->foods()->save($food);
         return  redirect()->to('foods')->with('message','تم تعديل البيانات بنجاح'); 
