@@ -35,7 +35,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 80), rgba(0, 0, 0, 0)), url("../assets/img/bg-cofe.jpg");
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
        }
 
        
