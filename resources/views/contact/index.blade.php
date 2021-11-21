@@ -15,7 +15,7 @@
                            
 
 
-                            <table class="table table-striped table-hover table-responsive-xl ">
+                            <table class="table table-striped table-hover  ">
                                     <thead  class="">
                                         <tr>
                                         
