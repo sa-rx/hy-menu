@@ -28,10 +28,10 @@
 
 
                                         
-                            <div class="form-group col-md-6">
-                                <label for="price">السعر</label>
-                                <input type="text" name="price" class="form-control"  @isset($food) value="{{$food->price}}" @endisset>
-                            </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="price">السعر</label>
+                                        <input type="text" name="price" class="form-control"  @isset($food) value="{{$food->price}}" @endisset>
+                                    </div>
 
                             
 
@@ -52,10 +52,35 @@
 
                                     <hr>
 
-                            <div class="form-group col-md-6">
-                                <label for="offer_price">العرض</label>
-                                <input type="text" name="offer_price" class="form-control"   @isset($food) value="{{$food->offer_price}}" @endisset>
-                            </div>
+
+
+                                    <div class="form-group col-md-6">
+                                        <label for="offer_price"> عرض الصغير</label>
+                                        <input type="text" name="offer_price" class="form-control"   @isset($food) value="{{$food->offer_price}}" @endisset>
+                                    </div>
+
+
+
+                                    <div class="form-group col-md-6">
+                                                <label for="offer_lg">عرض وسط</label>
+                                                <input type="text" name="offer_lg" class="form-control"  @isset($food) value="{{$food->offer_lg}}" @endisset>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                                <label for="offer_xl">عرض كبير</label>
+                                                <input type="text" name="offer_xl" class="form-control"  @isset($food) value="{{$food->offer_xl}}" @endisset>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                                <label for="offer_xxl">عرض البراد</label>
+                                                <input type="text" name="offer_xxl" class="form-control"  @isset($food) value="{{$food->offer_xxl}}" @endisset>
+                                    </div>  
+                                    
+                                    
+                                <hr>
+
+
+
 
                             <div class="form-group col-md-6">
                                 <label for="calories">السعرات الحراريه</label>

@@ -23,7 +23,7 @@
                                         
                                         <th scope="col">الاسم</th>
                                         <th scope="col " colspan="4">السعر</th>
-                                        <th scope="col">العرض</th>
+                                       
                                         <th scope="col"> سعره حراريه</th>
                                         <th scope="col"> الصنف</th>
                                         <th scope="col"> بواسطه</th>
@@ -40,38 +40,50 @@
                                             <tr>
                                                 <td >{{$food->name}}</td>
 
-                                                @if(isset($food->price))
-                                                <td>{{$food->price}}  </td>
+                                                @if(isset($food->offer_price))
+                                                <td><s class="text-danger">{{$food->price}}</s> <b class="text-dark"></b>{{$food->offer_price}}</td>
                                                 @else
-                                                <td>-</td>
+                                                <td>{{$food->price}}</td>
                                                 @endif
 
                                                 @if(isset($food->price_lg))
-                                                <td >{{$food->price_lg}}</td>
+                                                        @if(isset($food->offer_lg))
+                                                             <td><s class="text-danger">{{$food->price_lg}}</s> <b class="text-dark"></b>{{$food->offer_lg}}</td>
+                                                        @else
+                                                             <td >{{$food->price_lg}}</td>
+                                                        @endif
                                                 @else
-                                                <td>-</td>
+                                                     <td>-</td>
                                                 @endif
-                                                
+
                                                 @if(isset($food->price_xl))
-                                                <td >{{$food->price_xl}}</td>
+                                                    @if(isset($food->offer_xl))
+                                                        <td><s class="text-danger">{{$food->price_xl}}</s> <b class="text-dark"></b>{{$food->offer_xl}}</td>
+                                                    @else
+                                                             <td >{{$food->price_xl}}</td>
+                                                    @endif
                                                 @else
-                                                <td>-</td>
+                                                     <td>-</td>
                                                 @endif
                                                 
                                                 @if(isset($food->price_xxl))
-                                                <td >{{$food->price_xxl}}</td>
+                                                    @if(isset($food->offer_xxl))
+                                                        <td><s class="text-danger">{{$food->price_xxl}}</s> <b class="text-dark"></b>{{$food->offer_xxl}}</td>
+                                                    @else
+                                                             <td >{{$food->price_xxl}}</td>
+                                                    @endif
                                                 @else
-                                                <td>-</td>
+                                                     <td>-</td>
                                                 @endif
 
 
-                                                @if(isset($food->offer_price))
-                                                <td>{{$food->offer_price}}</td>
-                                                @else
-                                                <td>-</td>
-                                                @endif
-
+                                                @if(isset($food->calories))
                                                 <td>{{$food->calories}}</td>
+                                                @else
+                                                <td>-</td>
+                                                @endif
+
+                                              
                                                 <td>{{$food->category->title}}</td>
                                                 <td>{{$food->user->name}}</td>
 

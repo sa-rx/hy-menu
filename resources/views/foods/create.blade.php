@@ -49,13 +49,39 @@
                                         <input type="text" name="price_xxl" class="form-control">
                                     </div>
 
+                                    
+
                                      <hr>
 
 
                                     <div class="form-group col-md-6">
-                                        <label for="offer_price">العرض</label>
+                                        <label for="offer_price">العرض الصغير</label>
                                         <input type="text" name="offer_price" class="form-control">
                                     </div>
+
+
+
+                                    
+
+                                    <div class="form-group col-md-6">
+                                        <label for="offer_lg">عرض الوسط</label>
+                                        <input type="text" name="offer_lg" class="form-control">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="offer_xl">عرض الكبير</label>
+                                        <input type="text" name="offer_xl" class="form-control">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="offer_xxl">عرض البراد</label>
+                                        <input type="text" name="offer_xxl" class="form-control">
+                                    </div>
+
+
+
+
+                                    <hr>
 
                                     <div class="form-group col-md-6">
                                         <label for="calories">السعرات الحراريه</label>
