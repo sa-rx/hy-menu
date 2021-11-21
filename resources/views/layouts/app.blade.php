@@ -32,13 +32,24 @@
        body{
         font-family: 'Cairo', sans-serif;
     font-family: 'Mada', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 80), rgba(0, 0, 0, 0)), url("../assets/img/bg-cofe.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
        }
+
+       
+#mainNav {
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
     </style>
     
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
-<body >
+<body  >
 
        <header>
             <h1 class="site-heading text-center text-faded d-none d-lg-block">
@@ -49,7 +60,8 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
-                <a class="navbar-brand  " href="{{ url('/') }}"> {{ config('app.name') }}</a>
+                <a class="navbar-brand col-2 " href="{{ url('/') }}"> <img style=" border-radius: 50%;   width:39px;" src="assets/img/logo.jpg" alt=""> </a>
+
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -148,7 +160,7 @@
         </main>
        
 
-        <footer class="footer text-faded text-center py-5">
+        <footer class="footer text-faded text-center py-5" style=" background-color: rgba(0, 0, 0, 0.8);">
             <div class="container"><p class="m-0 small">Copyright &copy; Your Website 2021</p></div>
         </footer>
          <!-- Bootstrap core JS-->
