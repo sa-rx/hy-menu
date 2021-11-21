@@ -32,7 +32,7 @@
        body{
         font-family: 'Cairo', sans-serif;
     font-family: 'Mada', sans-serif;
-    background-image: linear-gradient(rgba(0, 0, 0, 80), rgba(0, 0, 0, 0)), url("../assets/img/bg-cofe.jpg");
+    background-image:  url("../assets/img/bg-cofe.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: contain;
@@ -51,11 +51,7 @@
 </head>
 <body  >
 
-       <header>
-            <h1 class="site-heading text-center text-faded d-none d-lg-block">
-                <span class="site-heading-lower">{{ config('app.name') }}</span>
-            </h1>
-        </header>
+    
 
 
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
