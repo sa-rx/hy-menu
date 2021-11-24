@@ -4,8 +4,8 @@
 @section('content')
 
 
-<section class="page-section cta">
-            <div class="container">
+<section class="page-section cta container rounded">
+            <div class="">
                 <div class="row">
                     <div class="col-xl-9 mx-auto cta-inner bg-faded text-center rounded">
 
@@ -125,7 +125,7 @@
 
                             
                             <div class="form-group">
-                                <button class="btn btn-success"> ارسال <i class="fas fa-paper-plane"></i>   </button>
+                                <button class="btn btn-outline-dark"> ارسال <i class="fas fa-paper-plane"></i>   </button>
                             </div>
                         </div>
                         </form>

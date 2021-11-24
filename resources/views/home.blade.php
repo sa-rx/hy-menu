@@ -7,8 +7,8 @@
 
 
 
-<section class="page-section cta">
-            <div class="container">
+<section class="page-section cta container rounded">
+            <div class="">
                 <div class="row">
                     <h2 class="section-heading mb-2  text-center">العروض</h2>
                     <div class="col-xl-9 mx-auto">
@@ -32,6 +32,7 @@
         </section>       
 
 
+ 
 
 
 
@@ -42,10 +43,8 @@
 
 
 
-
-        <section class="page-section cta">
-            <div class="container  bg-faded text-center rounded">
-
+        <section class="page-section cta container rounded ">
+            <div class="  bg-faded  cta-inner text-center rounded">
 
                 
  
@@ -54,7 +53,7 @@
                      @if($category->id == 1)
 
                         <div class=" ">
-                            <table class="table  table-hover table-borderless text-center  mb-5">
+                            <table class="table  table-hover table-responsive-xl table-borderless text-center  mb-5">
                         
                             <br>
                             <h3 class="section-heading-lower">{{$category->title}}</h3>

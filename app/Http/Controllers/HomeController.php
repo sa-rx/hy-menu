@@ -28,13 +28,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $categories = Category::orderBy('id','DESC')->get();
+        $categories = Category::orderBy('id','ASC')->get();
         //$offers = Offer::orderBy('id','DESC')->get();
         
 
 
 
-        $offers = Offer::whereAvailable('1')->get();
+        $offers = Offer::whereAvailable('1')->orderBy('id','DESC')->get();
 
         return view('home',compact('categories','offers'));
     }
